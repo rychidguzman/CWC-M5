@@ -31,7 +31,7 @@ class ContentModel: ObservableObject {
                 self.module = module
 
         } catch {
-            print(error)
+            print("Coudn't parse json file.")
         }
         
         //Get url of a json file
@@ -43,7 +43,7 @@ class ContentModel: ObservableObject {
             self.styleData = styledata
             
         } catch {
-            print("Error can't parse Json data file.")
+            print("Error can't parse HTML data file.")
         }
     }
 }
