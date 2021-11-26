@@ -8,13 +8,20 @@
 import Foundation
 class ContentModel: ObservableObject {
     
+    //List of Module
     @Published var module:[Module] = [Module]()
+    
+    //Current Module
+    @Published var currentModule:Module?
+    var currentModuleIndex:Int = 0
+    
     var styleData:Data?
     
     init(){
         getLocalData()
     }
     
+    //MARK: - Data Methods
     func getLocalData() {
         
         //Get url path of a json file
@@ -45,5 +52,21 @@ class ContentModel: ObservableObject {
         } catch {
             print("Error can't parse HTML data file.")
         }
+    }
+    
+    //MARK: - Module Navigation Methods
+    func beginModule(_ moduleId:Int){
+        
+        //Find the index for this module ID
+        for index in 0..<module.count {
+            if module[index].id == moduleId {
+                currentModuleIndex = index
+                break
+            }
+        }
+        
+        //Set the current module
+        currentModule = module[currentModuleIndex]
+        
     }
 }
