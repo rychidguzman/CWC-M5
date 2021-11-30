@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE40A9E42756743B00D9F0A5 /* CodeTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE40A9E32756743B00D9F0A5 /* CodeTextView.swift */; };
 		DE4370872744C5A8002364FF /* HomeViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4370862744C5A8002364FF /* HomeViewRow.swift */; };
 		DE6338BD273A430C007D6587 /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6338BC273A430C007D6587 /* ContentModel.swift */; };
 		DE6338C0273A4869007D6587 /* style.html in Resources */ = {isa = PBXBuildFile; fileRef = DE6338BE273A4869007D6587 /* style.html */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DE40A9E32756743B00D9F0A5 /* CodeTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeTextView.swift; sourceTree = "<group>"; };
 		DE4370862744C5A8002364FF /* HomeViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewRow.swift; sourceTree = "<group>"; };
 		DE6338BC273A430C007D6587 /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
 		DE6338BE273A4869007D6587 /* style.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = style.html; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				DEFDF06727512871008DE5FE /* ContentViewRow.swift */,
 				DEFDF0652750E25B008DE5FE /* ContentView.swift */,
 				DEA1738D275268F900149E12 /* ContentDetailView.swift */,
+				DE40A9E32756743B00D9F0A5 /* CodeTextView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 				DEFDF0662750E25B008DE5FE /* ContentView.swift in Sources */,
 				DEA1738E275268F900149E12 /* ContentDetailView.swift in Sources */,
 				DE6338C5273A5DD5007D6587 /* Module.swift in Sources */,
+				DE40A9E42756743B00D9F0A5 /* CodeTextView.swift in Sources */,
 				DEFDF06827512871008DE5FE /* ContentViewRow.swift in Sources */,
 				DE69AEF2273A3C69007D2666 /* LearningApp.swift in Sources */,
 				DE6338BD273A430C007D6587 /* ContentModel.swift in Sources */,
