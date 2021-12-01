@@ -20,7 +20,6 @@ struct ContentDetailView: View {
             if url != nil {
                 VideoPlayer(player: AVPlayer(url: url!))
                     .cornerRadius(10)
-                    .scaledToFit()
             }
             
             //Descriptins
@@ -32,13 +31,24 @@ struct ContentDetailView: View {
                     model.nextLesson()
                 } label: {
                     ZStack{
-                        Rectangle()
+                        RectangleView(color: Color.green)
                             .frame(height: 48)
-                            .foregroundColor(.green)
-                            .cornerRadius(10)
-                            .shadow(radius: 5)
                     
                         Text("Next Lesson: \(model.currentModule!.content.lessons[model.currentLessonIndex+1].title)")
+                            .foregroundColor(.white)
+                            .bold()
+                    }
+                }
+            } else {
+                //Show complete if in the last lesson
+                Button {
+                    model.currentContentSelected = nil
+                } label: {
+                    ZStack{
+                        RectangleView(color: Color.green)
+                            .frame(height: 48)
+                    
+                        Text("Complete!")
                             .foregroundColor(.white)
                             .bold()
                     }
